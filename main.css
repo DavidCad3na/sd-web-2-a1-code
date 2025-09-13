@@ -120,6 +120,16 @@ ul li:last-child {
   color: black;
 }
 
+.excersise-5 p,
+#error-messages p {
+  margin-top: 1rem;
+  background-color: #ff8f99;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border-left: 3px solid #ff0000;
+  color: black;
+}
+
 .error-message {
   background-color: #f8d7da;
   color: #721c24;

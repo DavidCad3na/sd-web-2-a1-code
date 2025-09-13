@@ -81,6 +81,7 @@ renderNamelistByAge(users, "age-filter-list", 30)
 //With Error Handling
 function renderNameListHandling(array, elementId, errorElementId){
   for (const item of array) {
+    //posts error if no name property
     if (!item.name){ 
       const errorMessage = "Error: Missing Name Property in array list for item with id " + item.id;
       console.error(errorMessage);
@@ -88,7 +89,7 @@ function renderNameListHandling(array, elementId, errorElementId){
       ErrorNameList.textContent = item.id + ": " + errorMessage;
       document.getElementById(errorElementId).appendChild(ErrorNameList);
     }
-
+    //renders if no error
     else {
       const NameList = document.createElement('li');
       NameList.textContent = item.name;
